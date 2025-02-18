@@ -3,6 +3,8 @@ mysqli y su función llamada connect -> mysqli_connect()
 Dentro de ésta función le pasaremos los parámetros de nuestra base de datos. -->
 
 <?php
+
+    session_start(); //Inicializamos una sesión para guardar las tareas (en sesión)
     $connection = mysqli_connect(
         'localhost', /*Aquí va el servidor de la DB (puede ser una IP)*/
         'root', /*Aquí va el usuario de la DB */
@@ -11,7 +13,7 @@ Dentro de ésta función le pasaremos los parámetros de nuestra base de datos. 
     );
     /*El script anterior me devuelve un objeto de coleccióno que hay que almacenarlo en una variable */
     //Verificamos que la FB esté conectada
-    // if(isset($connection)){
-    //     echo "DB is connected!";
-    // }
+    /*if(isset($connection)){
+         echo "DB is connected!";
+    }*/
 ?>
