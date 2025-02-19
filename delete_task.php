@@ -2,7 +2,7 @@
 
     include("db.php");
 
-    if(isset($GET['id'])){
+    if(isset($_GET['id'])){
         $id = $_GET['id'];
         $query = "DELETE FROM task WHERE id = $id";
         $result = mysqli_query($connection, $query);
@@ -12,7 +12,7 @@
         }
 
         $_SESSION['message'] = 'Task removed succesfully';
-        $SESSION['message_type'] = 'danger';
+        $_SESSION['message_type'] = 'danger';
         //Redireccionamos a index.php
         header("Location: index.php");
     }

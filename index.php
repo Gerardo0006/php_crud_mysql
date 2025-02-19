@@ -51,7 +51,7 @@ a nuestra app que lo primero que cargue al iniciar sea la conexión con la DB --
                                 <a href="edit_task.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
                                     <i class="fas fa-pencil-alt"></i>
                                 </a>
-                                <a href="delete_task.php=<?php echo $row['id']?>" class="btn btn-danger">
+                                <a href="delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger">
                                     <i class="fas fa-trash"></i>
                                 </a>
                             </td>
